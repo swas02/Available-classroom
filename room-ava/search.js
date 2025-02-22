@@ -39,9 +39,9 @@ const handleSearch = (parsedData) => {
 
   if (day && timeRange) {
     const result = searchClassrooms(parsedData, day, timeRange);
-    console.log(result);
+    // console.log(result);
     createCards(result);
-  } else console.log("Please select both day and time.");
+  } else alert("Please select both day and time.");
 };
 
 // Function to create cards dynamically based on the search result
